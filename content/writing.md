@@ -25,6 +25,9 @@ Works in Progress
 
 ## Press & Commentary
 
+### [20 ideas for Andy Burnham’s 100 days](https://www.arguably.uk/p/20-ideas-for-andy-burnhams-100-days?r=7pt)
+Arguably, contributor.
+
 ### [Trump Has Put George W. Bush’s Lifesaving Legacy in Danger](https://foreignpolicy.com/2025/02/05/pepfar-trump-lifesaving-hiv-aids-soft-power-danger/)
 Foreign Policy, with Tom Wein and Garrison Lovely.
 
