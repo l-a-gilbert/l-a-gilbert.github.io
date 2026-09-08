@@ -1,0 +1,15 @@
+{{ define "main" }} {{ partial "big-title.html" .Title }}
+
+<article class="prose">
+  {{ .Content }}
+  <div>
+    {{ range .RegularPages }}
+    <div class="page-item">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <aside>{{ .Description }}</aside>
+    </div>
+    {{ end }}
+  </div>
+</article>
+
+{{ end }}

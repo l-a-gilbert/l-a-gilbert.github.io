@@ -1,0 +1,16 @@
+{
+  "name": "lgilbert",
+  "version": "1.0.0",
+  "description": "This template is intended for the purpose of creating a *new* website, and as such, will be occassionally updated to work with the latest version of Hugo. The version used currently is Hugo v0.163.3, updated on June 25th 2026.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}

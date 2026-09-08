@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="flex flex-col md:flex-row mx-auto w-fit items-center -mb-4 md:gap-6">
+  <div class="hidden md:block border-theme border w-36 shrink-0 p-2 bg-background">
+    <img class="border-theme border" src="/headshot.jpg" width="1000" height="1144" style="aspect-ratio: 125 / 143" />
+  </div>
+  <div class="flex flex-col items-center md:items-start gap-3 md:gap-2 py-8">
+    <h1 class="text-6xl leading-16 text-center w-56 sm:w-fit md:text-left bg-theme text-background px-2 py-1">
+      {{ .Title }}
+    </h1>
+    <p class="font-semibold font-serif text-2xl text-center md:text-left">{{ .Description }}</p>
+  </div>
+  <div class="md:hidden border-theme border w-36 shrink-0 p-2 bg-background">
+    <img class="border-theme border" src="/headshot.jpg" width="1000" height="1144" style="aspect-ratio: 125 / 143" />
+  </div>
+</div>
+
+<article class="prose">{{ .Content }}</article>
+
+{{ end }}

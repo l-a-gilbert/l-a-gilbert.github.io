@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-theme: #2d6b4f;
+  --color-theme-light: #2d6b4f88;
+  --color-background: #eeeeee;
+  --font-sans: DM Sans, system-ui;
+  --font-serif: "Libre Caslon Text", ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+}
+
+/* Tell Tailwind which files to scan for class names.
+   Paths are relative to this file (assets/css/). */
+@source "../../layouts/**/*.html";
+@source "../../content/**/*.{html,md}";
+@source "../../hugo_stats.json";

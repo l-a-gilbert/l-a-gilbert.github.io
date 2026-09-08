@@ -1,0 +1,103 @@
+.prose *:first-child {
+  margin-top: 0px;
+}
+
+.prose p,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6,
+.prose blockquote {
+  overflow-wrap: break-word;
+  margin: 0 0 var(--margin) 0;
+}
+
+.prose h2 {
+  font-size: 2.25rem;
+  line-height: 1.2;
+  margin: 54px 0px 0.5rem 0px;
+  font-family: var(--font-sans);
+  letter-spacing: -0.03em;
+}
+
+.prose h3 {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-family: var(--font-serif);
+  margin: 32px 0px 0.4rem 0px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.prose h4 {
+  font-size: 1.25rem;
+  margin: 32px 0px 0.4rem 0px;
+  font-family: var(--font-sans);
+}
+
+.prose h5 {
+  font-size: 0.8125rem;
+}
+
+.prose p:last-child,
+.prose blockquote:last-child,
+.prose ul:last-child,
+.prose ol:last-child,
+.prose pre:last-child {
+  margin-bottom: 0px;
+}
+
+.prose a {
+  text-decoration: underline;
+  text-decoration-color: var(--color-theme);
+  color: var(--color);
+  text-underline-offset: 2px;
+}
+
+.prose h3 a {
+  text-decoration: none;
+}
+
+.prose a:hover {
+  text-shadow: 0px 0px 8px var(--color-theme-light);
+}
+
+.prose ol,
+.prose ul {
+  padding-left: 1.2rem;
+  margin-bottom: var(--margin);
+}
+
+.prose ul {
+  list-style: disc;
+}
+
+.prose ol {
+  list-style: decimal;
+}
+
+.prose li {
+  margin: 0.5rem 0;
+}
+
+.prose li > ul,
+.prose li > ol {
+  margin: 0.5rem 0;
+}
+
+.prose blockquote {
+  padding: var(--spacing);
+  background-color: #eeeeee;
+  border-radius: 8px;
+}
+
+.prose cite {
+  display: block;
+}
+
+.prose code {
+  font-family: monospace, monospace;
+  background: #dddddd;
+  padding: 1px 3px;
+}

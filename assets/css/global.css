@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "Libre Caslon Text";
+  src: url("/fonts/LibreCaslonText-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libre Caslon Text";
+  src: url("/fonts/LibreCaslonText-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libre Caslon Text";
+  src: url("/fonts/LibreCaslonText-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("/fonts/DMSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("/fonts/DMSans-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("/fonts/DMSans-Light.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("/fonts/DMSans-LightItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+html {
+  font-size: 17px;
+}
+
+::selection {
+  background-color: var(--color-theme);
+  color: var(--color-background);
+}
+
+:root {
+  --base-font-size: 16px;
+  --margin: calc(1.2 * 1rem);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-theme);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bg-pattern {
+  position: fixed;
+  left: 0px;
+  top: -1px;
+  right: 0;
+  bottom: 0;
+  background-image:
+    linear-gradient(#2d6b4f33 1px, transparent 1px), linear-gradient(90deg, #2d6b4f33 1px, transparent 1px),
+    linear-gradient(#d1dad6aa 1px, transparent 1px), linear-gradient(90deg, #d1dad6aa 1px, transparent 1px);
+  background-size:
+    64px 64px,
+    64px 64px,
+    8px 8px,
+    8px 8px;
+  background-position: -1px -1px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/*LAYOUT */
+
+main > article {
+  position: relative;
+  padding: 2.5rem;
+  border: solid 1px var(--color-theme);
+  outline: solid 1px var(--color-theme);
+  outline-offset: -12px;
+  background-color: var(--color-background);
+  min-height: 900px;
+}
+
+main {
+  max-width: 960px;
+  width: 100%;
+  margin: 156px auto 64px auto;
+  padding: 0px;
+}
+
+@media (width >= 40rem /* 640px */) {
+  main {
+    padding: 0px 32px 0px 84px;
+  }
+
+  .bg-pattern {
+    left: 54px;
+  }
+
+  main > article {
+    padding: 4rem;
+  }
+
+  html {
+    font-size: 19px;
+  }
+}
+
+.page-item:first-of-type {
+  border-top: dotted 1px var(--theme);
+}
+
+.page-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  border-bottom: dotted 1px var(--theme);
+  padding: 0.5rem;
+}
+
+.page-item a {
+  flex-shrink: 0;
+  font-family: var(--font-sans);
+}
+
+.page-item aside {
+  font-style: italic;
+  font-size: 0.95rem;
+  text-align: right;
+  max-width: 50%;
+}
+
+h1 {
+  font-family: var(--font-serif);
+}
